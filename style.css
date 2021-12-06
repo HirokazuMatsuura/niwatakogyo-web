@@ -1,0 +1,636 @@
+@charset "UTF-8";
+/*
+Theme Name: NIWATA
+Theme URI: 
+Author: MATSUURA
+Author URI: 
+*/
+/* ========================================================================
+   Component: Base
+ ========================================================================== */
+/*
+ * 1. Set `font-size` to support `rem` units
+ *    Not using `font` property because a leading hyphen (e.g. -apple-system) causes the font to break in IE11 and Edge
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Style
+ */
+
+/* header css */
+
+.header_container {
+    min-height: 50px;
+    height: 10vh;
+    overflow: hidden;
+}
+
+.header_logo {
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width: 1024px)  {
+    .header_logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+   
+@media (max-width: 768px) {
+    .header_logo {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.front_intro {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+}
+
+@media (max-width: 1024px)  {
+    .front_intro {
+        position: absolute;
+        bottom: 5%;
+        left: 15%;
+    }
+}
+   
+@media (max-width: 768px) {
+    .front_intro {
+        position: absolute;
+        bottom: 5%;
+        left: 15%;
+    }
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width: 1024px)  {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+   
+@media (max-width: 768px) {
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.front_logo {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+}
+
+/* front-page css */
+
+.front_overview {
+    height: 644px;
+    background-image: url("image/dimon-blr-dn1YSA8lPOo-unsplash.jpg");
+    background-size: cover;
+}
+
+.about_overview {
+    height: 644px;
+    position: relative;
+    background-image: url("image/about-tab.png");
+    background-size: cover;
+    text-align: center;
+}
+
+.concept_overview {
+    height: 644px;
+    background-image: url("image/concept-tab.png");
+    background-size: cover;
+}
+
+@media (max-width: 1024px)  {
+    .front_overview {
+        height: 500px;
+        background-image: url("image/dimon-blr-dn1YSA8lPOo-unsplash.jpg");
+        background-size: cover;
+    }
+
+    .about_overview {
+        height: 500px;
+        position: relative;
+        background-image: url("image/about-tab.png");
+        background-size: cover;
+        text-align: center;
+    }
+
+    .concept_overview {
+        height: 500px;
+        background-image: url("image/concept-tab.png");
+        background-size: cover;
+    }
+}
+   
+@media (max-width: 768px) {
+    .about_overview {
+    height: 500px;
+    position: relative;
+    background-image: url("image/about-tab.png");
+    background-size: cover;
+    text-align: center;
+    }
+}
+/* この関数で全てのdivの横幅を調整 */
+
+.niwata_logo {
+    width: 150px;
+    height: 150px;
+    margin-right: 40%;
+    margin-top: 10%;
+    float: right;
+    color: white;
+    text-align: center;
+}
+
+.vertical_band {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px)  {
+    .vertical_band {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+   
+  @media (max-width: 768px) {
+    .vertical_band {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* 画面に応じて画像と文章の表示順変更 */
+
+.reverse_container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.reverse_item1 {
+    order: 1;
+}
+
+.reverse_item2 {
+    order: 2;
+}
+   
+@media (max-width: 768px) {
+    .reverse_container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .column_container {
+        flex-direction: column;
+    }
+}
+
+.horizontal_bond {
+    height: 794px;
+    padding: 140px 0;
+}
+
+.horizontal_bond_footer {
+    height: 150vh;
+}
+
+.front_concept {
+    height: 80vh;
+}
+
+.image_size {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* .left_zone {
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: visible;
+    position: relative;
+} */
+
+@media screen and (max-width: 766px)  {
+    .left_zone {
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: visible;
+    position: relative;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .left_zone {
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: visible;
+    position: relative;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .left_zone {
+        float: left;
+        width: 100%;
+        height: 500px;
+        overflow: visible;
+        position: relative;
+    }
+}
+   
+
+.right_zone {
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: visible;
+    position: relative;
+}
+
+@media (max-width: 1024px)  {
+    .right_zone {
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: visible;
+    position: relative;
+    }
+}
+   
+@media (max-width: 768px) {
+    .right_zone {
+        float: left;
+        width: 100%;
+        height: 500px;
+        overflow: visible;
+        position: relative;
+    }
+}
+
+.font_size {
+    font-size: 12pt;
+    line-height: 3em;
+}
+
+@media (max-width: 1024px)  {
+    .font_size {
+        font-size: 50%;
+    }
+}
+   
+@media (max-width: 768px) {
+    .font_size {
+        font-size: 30%;
+    }
+}
+
+.font_size_strength {
+    font-size: 12pt;
+    line-height: 2em;
+}
+
+@media (max-width: 1024px)  {
+    .font_size {
+        font-size: 50%;
+    }
+}
+   
+@media (max-width: 768px) {
+    .font_size {
+        font-size: 30%;
+    }
+}
+
+
+.container_zone_intro {
+    position: absolute;
+    top: 50%
+}
+
+.container_zone_logo {
+    position: absolute;
+    right: 0;
+    bottom: 50%
+}
+
+.container_zone {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    overflow: visible;
+    position: relative;
+}
+
+.container_zone h2 {
+    margin-bottom: 30px;
+}
+
+.container_zone h3 {
+    margin-bottom: 30px;
+}
+
+.container_zone h6 {
+    margin-bottom: 30px;
+}
+
+.detail_position {
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.btn_change {
+    color: white;
+    background-color: #318879;
+    border: 20px solid #318879;
+    display: inline-block;
+}
+  
+.btn_change:hover{
+    animation: big 0.1s;
+    animation-fill-mode: forwards;
+}
+  
+.btn_change:active{
+    animation: small 0.1s;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes big {
+    0% {transform: scale(1); }
+    100% {transform: scale(1.5);}
+}
+  
+@keyframes small {
+    100% {transform: scale(0.5);}
+}
+
+.part {
+    position: absolute;
+    z-index: 1000;
+}
+
+/* footer css */
+
+.contact_form {
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.contact_form h1 {
+    text-align: center;
+}
+
+.contact_form input {
+    width: 100%;
+    height: 50px;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    width: 20%;
+    height: 50px;
+    background-color: #318879;
+    color: white;
+    float: right;
+}
+
+.contact_form label {
+    width: 100%;
+}
+
+.contact_form span {
+    width: 100%;
+}
+
+.contact_form textarea {
+    width: 100%;
+}
+
+.footer_copywrite {
+    height: 5vh;
+    text-align: center;
+    background-color: #318879;
+}
+
+/* area css */
+
+.band_color_white {
+    background-color: white;
+}
+
+.band_color_gray {
+    background-color: #cfe1e5;
+}
+
+.band_color_mouse {
+    background-color: #f1f1f3;
+}
+
+.band_color_darkgreen {
+    background-color: #318879;
+}
+
+.band_color_brown {
+    background-color: #d6834d;
+}
+
+.text_black {
+    color: #444444;
+}
+
+.text_white {
+    color: white;
+    text-decoration: none;
+}
+
+.height_max {
+    height: 100%;
+}
+
+/* concept css */
+
+.title_part {
+    height: 15vh;
+    text-align: center;
+}
+
+/* advantage css */
+
+.ad_number {
+    float: left;
+    width: 5%;
+    height: 10vh;
+    border-left: medium solid red;
+    color: red;
+}
+
+.ad_text {
+    float: left;
+    width: 95%;
+}
+
+/* works　css */
+
+.icon_list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.icon_list li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    height: 20em;
+    width: 25%;
+    margin: 0;
+}
+
+@media (max-width: 1024px)  {
+    .icon_list li {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        height: 20em;
+        width:100%;
+        }
+}
+   
+@media (max-width: 768px) {
+    
+    .icon_list li {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 20em;
+        width: 25%;
+        margin: auto;
+        }
+}
+
+@media (max-width: 1024px)  {
+    .large_band {
+        height: 2000px;
+        width:100%;
+        text-align: center;
+        }
+
+    .large_band2 {
+        height: 2200px;
+        width:100%;
+        text-align: center;
+        }
+}
+   
+@media (max-width: 768px) {
+    .large_band {
+        height: 2000px;
+        width:100%;
+        text-align: center;
+        }
+
+    .large_band2 {
+        height: 2200px;
+        width:100%;
+        text-align: center;
+        }
+}
+
+/* aboutのタブ */
+
+.about_box {
+    width: 80vh;
+    height: 100%;
+   
+}
+
+.about_tab {
+    width: 40%;
+    height: 20%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@media (max-width: 1024px)  {
+    .about_tab {
+        width: 60%;
+        height: 20%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        }
+
+    .about_tab  {
+        width: 80%;
+        height: 20%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        }
+}
+
+.about_tab_list {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 1em;
+    padding: 20px;
+}
+
+.about_tab ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.about_tab li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.about_tab a{
+    text-decoration: none;
+}

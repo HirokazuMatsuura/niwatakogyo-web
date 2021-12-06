@@ -1,0 +1,745 @@
+// common
+.cover-img-layer {
+  opacity: 0.4;
+  background: #333333;
+}
+.font-futura {
+  font-family: futura;
+}
+
+.back-button {
+  width: 25%;
+  height: 62px;
+  font-size: 16px;
+}
+
+.main-content-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.main-lightgray-back {
+  background-color: $light-gray;
+}
+
+@media screen and (min-width: $breakpoint-small) {
+  .mail-form-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-small) {
+  .mail-form-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.mail-form-modal {
+  border-radius: 7px;
+  margin-top: 100px !important;
+  height: 400px;
+  background-color: $light-gray !important;
+  @media screen and (min-width: 1400px) {
+    width: 50% !important;
+    padding: 40px 90px;
+  }
+}
+.mail-input {
+  width: 100% !important;
+}
+
+.mail-modal-title {
+  border-bottom: $light-gray solid 0.7px;
+}
+
+.mail-form-submit {
+  background: #d3040e;
+  color: $white !important;
+}
+
+.text-darkgray {
+  color: darkgray;
+}
+
+.text-white {
+  color: $white;
+}
+
+.label-style {
+  padding: 4px 0;
+}
+
+.image-wrapper {
+  width: 100%;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+.artwork-image-wrapper-back {
+  background: white;
+  border-radius: 5px;
+  img {
+    padding: 10px;
+  }
+}
+.button-icon-position {
+  float: right;
+  margin-top: 15px;
+  @media screen and (max-width: $breakpoint-small) {
+    margin-top: 9px;
+  }
+}
+
+.button-icon-position-left {
+  float: left;
+  margin-top: 15px;
+  @media screen and (max-width: $breakpoint-small) {
+    margin-top: 9px;
+  }
+}
+
+.request-button-icon-position {
+  float: right;
+  margin-top: 20px;
+}
+
+.button-text-position {
+  position: relative;
+  top: 6px;
+  @media screen and (max-width: $breakpoint-small) {
+    top: 0.01em;
+  }
+}
+
+.request-button-text-position {
+  position: relative;
+  top: 10px;
+  @media screen and (max-width: $breakpoint-small) {
+    top: 0.01em;
+  }
+}
+
+// header
+.uk-navbar-nav {
+  a {
+    color: #000000 !important;
+    padding: 0 30px !important;
+  }
+}
+
+.padding-header-top {
+  padding-top: 50px;
+}
+
+.padding-header-img-bottom {
+  padding-bottom: 15px;
+}
+
+.header-logo-size {
+  height: 84px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+// front
+.front-artwork-image-wrapper {
+  background: white;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  @media screen and (max-width: $breakpoint-small) {
+    width: 100%;
+    height: 175px;
+  }
+  @media screen and (max-width: $breakpoint-xsmall) {
+    height: 150px;
+  }
+}
+
+.front-artwork-image {
+  position: absolute;
+  padding: 10px 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.front-title-text {
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 20px;
+  }
+}
+.grid-margin-large {
+  margin-top: 80px !important;
+}
+
+.publication-title {
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 21px;
+  }
+}
+.publication-image-wrapper {
+  border: solid 1px lightgray;
+  background: white;
+  width: 220px;
+  height: 220px;
+  position: relative;
+  @media screen and (max-width: $breakpoint-small) {
+    width: 100%;
+    height: 150px;
+  }
+}
+
+.front-publication-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.front-entrance {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.front-entrance-message-box {
+  background: black;
+  opacity: 0.8;
+}
+.front-entrance-message {
+  color: white;
+  padding: 30px 20px;
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 11.1px;
+    padding: 10px 20px;
+  }
+}
+
+.front-button {
+  width: 100%;
+  border: 1px solid $linecolor !important;
+  height: 50px;
+  @media screen and (max-width: $breakpoint-small) {
+    height: 40px;
+  }
+}
+
+.front-border {
+  border-color: $linecolor;
+}
+
+.front-card {
+  background-color: white;
+  margin-top: 30px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    @media screen and (min-width: $breakpoint-small) {
+      height: -webkit-fill-available !important;
+    }
+  }
+}
+
+.front-topic-title {
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 14px;
+  }
+}
+
+.front-card-content {
+  padding: 20px !important;
+}
+
+.front-bottom-margin {
+  margin-bottom: 60px !important;
+}
+
+.artists-text-style {
+  margin-top: 0 !important;
+  margin-bottom: 25px;
+  color: #333333;
+}
+
+// artists
+.archive-artists-margin {
+  margin-left: 10px;
+}
+
+.artist-initials {
+  background-color: lightgray;
+  padding-left: 10px;
+}
+
+// artist detail
+.artist-detail-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-size: cover !important;
+  @media screen and (max-width: $breakpoint-small) {
+    width: 130px;
+    height: 130px;
+  }
+  @media screen and (max-width: $breakpoint-xsmall) {
+    width: 100px;
+    height: 100px;
+  }
+}
+.artist-detail-info {
+  color: white;
+}
+.mobile-padding-remove {
+  @media screen and (max-width: $breakpoint-small) {
+    padding-left: inherit !important;
+  }
+}
+
+.artist-cover {
+  background-size: cover !important;
+  background-color: lightgray;
+  width: 90%;
+}
+
+// artworks
+.artwork-element {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  @media screen and (max-width: $breakpoint-small) {
+    height: 300px;
+  }
+}
+.artworks-new-tag {
+  position: relative;
+  float: left;
+  top: 7px;
+  left: -5px;
+  padding: 3px 7px;
+  background: #c80000;
+  color: white;
+}
+
+.artwork-image-wrapper-fix {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  @media screen and (min-width: $breakpoint-small) {
+    height: 350px !important;
+  }
+}
+
+.artwork-image-fix {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  &:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    opacity: 0.8;
+  }
+}
+.artwork-detail-content {
+  padding: 20px 10%;
+  background-color: white;
+}
+.artwork-detail-image-wrapper {
+  // height: auto;
+  // height: 100%;
+  img {
+    width: 80%;
+    // position: relative;
+    // top: 50%;
+    // transform: translateY(-50%);
+  }
+}
+.detail-img {
+  width: 80%;
+}
+.artwork-button {
+  width: 30%;
+}
+
+.checkbox-name {
+  padding-left: 3px;
+}
+
+.artist-top-info-box {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.artworks-show-num {
+  text-align: right;
+}
+
+.artwork-image-wrapper {
+  height: 150px;
+  margin: 0 auto;
+  overflow: hidden;
+  div {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    img {
+      width: 100%;
+    }
+    img:hover {
+      transform: scale(1.1);
+      transition-duration: 0.3s;
+      opacity: 0.8;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-small) {
+    height: 350px !important;
+  }
+  // img:hover {
+  //   transform: scale(1.1);
+  //   transition-duration: 0.3s;
+  //   opacity: 0.8;
+  // }
+}
+
+.search-conditions-row {
+  border-bottom: solid 1px lightgray;
+  padding-bottom: 20px;
+}
+.search-conditions-row-top {
+  border-top: solid 1px lightgray;
+  border-bottom: solid 1px lightgray;
+  padding: 20px 0;
+}
+
+.pnavi {
+  a {
+    @extend .uk-link-reset;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  span {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .prev,
+  .next {
+    background-color: #666666;
+    color: $white !important;
+    padding: 2px 3px 6px;
+  }
+  .prev {
+    @extend .uk-margin-medium-right;
+  }
+
+  .next {
+    @extend .uk-margin-medium-left;
+  }
+  .current {
+    border: 1px solid #666666;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.artworks-medium-font-size {
+  font-size: 24px;
+}
+
+.artworks-small-font-size {
+  font-size: 16px;
+}
+
+.clear-button-layout {
+  width: 66.6%;
+  float: right;
+}
+
+.search-button-layout {
+  width: 66.6%;
+  background-color: #555555;
+  color: #ffffff;
+}
+.search-button-padding {
+  padding-left: 20px !important;
+}
+
+// artwork
+.request-button {
+  color: white;
+  font-size: 16px;
+  background-color: #555555;
+  height: 62px;
+  width: 66.6%;
+  border: none !important;
+  @media screen and (max-width: $breakpoint-small) {
+    height: 40px;
+  }
+}
+
+.artwork-request-button {
+  @extend .request-button;
+  @media screen and (max-width: $breakpoint-small) {
+    width: 100%;
+  }
+}
+
+.artwork-form-modal {
+  border-radius: 7px;
+  margin-top: 100px !important;
+  // height: 600px;
+  background-color: $light-gray !important;
+  @media screen and (min-width: $breakpoint-small) {
+    padding: 40px 100px;
+    width: 40% !important;
+  }
+}
+
+.artwork-modal-submit {
+  @extend .mail-form-submit;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.mail-textarea {
+  height: 100px;
+  width: 100% !important;
+  border-radius: 5px;
+}
+
+.artdetail-title-text {
+  font-weight: bolder;
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 12px;
+    font-weight: normal;
+  }
+}
+
+.artdetail-author-text {
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 14px;
+  }
+}
+
+// exhibtion
+.archive-exhibition-title {
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 16px;
+  }
+}
+
+.archive-exhibition-date {
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 14px;
+  }
+}
+.exhibition-card-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.exhibition-card-body {
+  height: 70px;
+}
+
+// publication
+.publication-banner {
+  max-height: 500px;
+  width: 90%;
+}
+.publication-height {
+  min-height: 600px;
+}
+
+.publication-message-box {
+  background: black;
+  opacity: 0.8;
+  padding: 10px 60px;
+  width: initial;
+}
+
+.publication-form-modal {
+  border-radius: 7px;
+  margin-top: 100px !important;
+  // height: 600px;
+  background-color: $light-gray !important;
+  @media screen and (min-width: $breakpoint-small) {
+    padding: 40px 100px;
+    width: 40% !important;
+  }
+}
+
+.publication-form {
+  max-width: 500px;
+  min-width: 300px;
+  float: right;
+}
+
+// topic
+.archive-topic-title {
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 18px;
+  }
+}
+
+.archive-topic-date {
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 16px;
+  }
+}
+
+.archive-topic-desc {
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 16px;
+    div {
+      margin-left: 20px;
+    }
+  }
+}
+
+.topic-card {
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    @media screen and (min-width: $breakpoint-small) {
+      height: -webkit-fill-available !important;
+    }
+  }
+}
+.topic-card-content {
+  padding: 20px !important;
+}
+
+.topic-image-wrapper {
+  width: 200px;
+  height: 200px;
+  @media screen and (max-width: $breakpoint-small) {
+    width: 120px;
+    height: 120px;
+  }
+}
+.topic-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: solid #dddddd 2px;
+}
+@media screen and (max-width: $breakpoint-small) {
+  .topic-margin-left {
+    margin-left: 20px;
+  }
+}
+
+.archive-topic-image-wrapper {
+  @extend .topic-image-wrapper;
+  @media screen and (max-width: $breakpoint-small) {
+    width: 100px;
+  }
+}
+
+.text-omitted {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// about
+.about-outline-fontsize {
+  font-size: 13px;
+}
+.about-staff-fontsize {
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 13px;
+  }
+}
+.about-button {
+  width: 230px;
+  @media screen and (max-width: $breakpoint-small) {
+    max-width: 100px;
+    padding: 0 10px;
+  }
+}
+
+.about-table {
+  width: 40% !important;
+}
+
+// access
+.access-map-download {
+  color: #d3040e;
+  border-bottom: 1px #d3040e solid;
+
+  &:hover {
+    text-decoration: none !important;
+    color: #d3040e !important;
+  }
+}
+.access-table {
+  .td-title {
+    text-align: right;
+  }
+}
+
+//footer
+.font-footer {
+  font-size: 10px;
+  color: #888888 !important;
+  text-align: center;
+}
+
+.layout-footer {
+  height: 80px;
+  background-color: #001623 !important;
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}

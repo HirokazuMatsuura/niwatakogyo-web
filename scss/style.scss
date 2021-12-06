@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*
+Theme Name: tolman
+Theme URI: https://tolman/
+Author: TODOROKI
+Author URI: https://tolman/
+*/
+@import "./variables.scss";
+
+@import "../lib/uikit/scss/variables-theme.scss";
+@import "../lib/uikit/scss/mixins-theme.scss";
+@import "../lib/uikit/scss/uikit-theme.scss";
+
+@import "./uk-wrapper.scss";
+@import "./custom.scss";

@@ -1,0 +1,134 @@
+.uk-button-default {
+  &:hover {
+    background-color: lightgray !important;
+  }
+
+  border: 1px solid $darkgray !important;
+}
+
+.uk-button {
+  text-transform: none !important;
+  font-family: futura;
+}
+
+.uk-divider-small {
+  &:after {
+    border-top: 4px solid #e5e5e5 !important;
+  }
+}
+
+.uk-breadcrumb {
+  background-color: #555555;
+  padding: 3px 0 3px 100px !important;
+  @media screen and (max-width: $breakpoint-small) {
+    padding: 3px 0 3px 20px !important;
+  }
+  li {
+    a {
+      color: white !important;
+      @extend .uk-button-text;
+      &:before {
+        border-bottom: 1px solid white !important;
+      }
+    }
+    span {
+      color: $darkgray !important;
+    }
+  }
+}
+
+.uk-height-small {
+  @media screen and (min-width: $breakpoint-small) {
+    height: 240px !important;
+  }
+}
+
+.uk-text-xlarge {
+  font-size: 24px;
+}
+
+.uk-text-large {
+  font-size: 20px;
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 16px;
+  }
+}
+
+.uk-text-medium {
+  font-size: 16px;
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 12px;
+  }
+}
+
+.uk-text-small {
+  font-size: 12px;
+}
+.uk-navbar-nav > li > a {
+  text-transform: none !important;
+  font-size: 16px !important;
+}
+
+.uk-card-default {
+  box-shadow: none;
+}
+
+.uk-input {
+  @extend .uk-border-rounded;
+  width: 80px;
+}
+.uk-checkbox {
+  @extend .uk-border-rounded;
+}
+
+input.uk-checkbox:checked {
+  background-color: $deepgray;
+}
+
+input.uk-checkbox:checked:focus {
+  background-color: $deepgray;
+}
+
+.uk-checkbox:checked {
+  background-color: $deepgray;
+}
+
+.uk-checkbox:focus {
+  border-color: $deepgray;
+}
+
+input.uk-radio:checked {
+  background-color: $deepgray;
+}
+
+input.uk-radio:checked:focus {
+  background-color: $deepgray;
+}
+
+.uk-radio:checked {
+  background-color: $deepgray;
+}
+
+.uk-radio:focus {
+  border-color: $deepgray;
+}
+
+.uk-margin-large-top {
+  margin-top: 80px !important;
+}
+
+.uk-margin-large-bottom {
+  margin-bottom: 80px !important;
+}
+
+.uk-panel {
+  text-align: center;
+}
+
+h2 {
+  line-height: unset;
+}
+
+.uk-breadcrumb > * > * {
+  font-size: unset;
+}
